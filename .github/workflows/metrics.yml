@@ -30,6 +30,12 @@ jobs:
           
           # Template
           template: classic
+
+          extras_css: |
+            :root {
+              --color-primary: #BD93F9;
+              --color-secondary: #6272A4;
+              --color-text: #F8F8F2;
+              --color-background: #282A36;
+            }
           
-          # Preset (tema)
-          config_presets: github-dark
