@@ -113,7 +113,7 @@ Book management and recommendation system demonstrating fundamental computer sci
 
 <div align="center">
 
-[Metrics](./assets/metrics.svg)
+![Metrics](./assets/metrics.svg)
 
 </div>
 
