@@ -19,7 +19,7 @@ jobs:
           filename: assets/metrics.svg
           base: header, activity, community, repositories, metadata
           
-          # Linguagens - VERSÃO SIMPLIFICADA (sem recently-used)
+          # Linguagens
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
@@ -28,5 +28,15 @@ jobs:
           # Linhas de código
           plugin_lines: yes
           
+          # Calendário isométrico
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          
+          # Hábitos de codificação
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          
           # Tema
-          config_theme: github-dark
+          config_theme: dracula
