@@ -25,17 +25,20 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
           
+          # REMOVER HTML E OUTRAS LINGUAGENS DE MARKUP
+          plugin_languages_ignored: HTML, CSS, Markdown, YAML, JSON, XML
+          
           # Linhas de código
           plugin_lines: yes
           
           # Template
           template: classic
-
+          
+          # Tema
           extras_css: |
             :root {
-              --color-primary: #BD93F9;
-              --color-secondary: #6272A4;
-              --color-text: #F8F8F2;
-              --color-background: #282A36;
+              --color-primary: #8B5CF6;
+              --color-secondary: #6D28D9;
+              --color-text: #F3F4F6;
+              --color-background: #111827;
             }
-          
