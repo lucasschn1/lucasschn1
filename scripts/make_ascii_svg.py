@@ -41,22 +41,33 @@ def load_rows():
     # keep trailing spaces meaningful, but drop a fully-blank leading/trailing
     # line that's just an artifact of how the block was pasted/saved.
     lines = raw.split("\n")
-    while lines and lines[0].strip() == "":
+    # drop blank + detached-speck rows at the top/bottom so the figure itself
+    # defines the bounding box (a stray fragment would otherwise pad the frame).
+    SPECK = 12
+    while lines and len(lines[0].strip()) < SPECK:
         lines.pop(0)
-    while lines and lines[-1].strip() == "":
+    while lines and len(lines[-1].strip()) < SPECK:
         lines.pop()
-    # strip the common leading whitespace so the art sits tight in the
-    # viewBox (keeps it visually centered when embedded at a fixed width).
-    # base the dedent on the "body" rows (ignore short detached specks so a
-    # stray fragment doesn't pin the whole block to the left edge).
-    body = [ln for ln in lines if len(ln.strip()) >= 20]
-    ref = body or [ln for ln in lines if ln.strip()]
-    if ref:
-        indent = min(len(ln) - len(ln.lstrip(" ")) for ln in ref)
-        if indent:
-            lines = [ln[min(indent, len(ln) - len(ln.lstrip(" "))):]
-                     if ln.strip() else ln for ln in lines]
-    return [ln.rstrip() for ln in lines]
+
+    ink = [ln for ln in lines if ln.strip()]
+    if not ink:
+        return lines
+
+    # crop to the tight ink bounding box on the left, drop the right slack.
+    left = min(len(ln) - len(ln.lstrip(" ")) for ln in ink)
+    cropped = [ln[left:].rstrip() if ln.strip() else "" for ln in lines]
+
+    # balance the figure: shift every row by the same amount so the ink
+    # centroid lands on the middle of the frame (keeps pixel alignment while
+    # correcting the diagonal lean).
+    cols = [c for ln in cropped for c, ch in enumerate(ln) if ch != " "]
+    widest = max((len(ln) for ln in cropped), default=0)
+    if cols:
+        centroid = sum(cols) / len(cols)
+        shift = round(widest / 2 - centroid)
+        if shift > 0:
+            cropped = [" " * shift + ln if ln else "" for ln in cropped]
+    return [ln.rstrip() if ln.strip() else "" for ln in cropped]
 
 
 def build_svg(rows):
