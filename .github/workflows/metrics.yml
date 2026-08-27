@@ -3,7 +3,9 @@ name: GitHub Metrics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *"
+    # weekly -- language/line stats barely move day to day, and this keeps the
+    # bot commits (and any race with "Update profile art") to a minimum.
+    - cron: "0 5 * * 1"
 
 jobs:
   metrics:
@@ -34,11 +36,13 @@ jobs:
           # Template
           template: classic
           
-          # Tema
+          # Theme -- self-contained dark card, matched to the whoami/heatmap palette
           extras_css: |
             :root {
-              --color-primary: #8B5CF6;
-              --color-secondary: #6D28D9;
-              --color-text: #F3F4F6;
-              --color-background: #111827;
+              --color-primary: #39d353;
+              --color-secondary: #2ea043;
+              --color-text: #c9d1d9;
+              --color-background: #0d1117;
+              --color-calendar-graph-day-bg: #161b22;
             }
+            .field { border-color: #30363d !important; }

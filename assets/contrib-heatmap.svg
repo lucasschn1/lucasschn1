@@ -24,22 +24,22 @@
     to{opacity:1;transform:translateY(0);}
   }
 </style>
-<text x="28" y="13">Ago</text>
-<text x="56" y="13">Set</text>
-<text x="112" y="13">Out</text>
+<text x="28" y="13">Aug</text>
+<text x="56" y="13">Sep</text>
+<text x="112" y="13">Oct</text>
 <text x="168" y="13">Nov</text>
-<text x="238" y="13">Dez</text>
+<text x="238" y="13">Dec</text>
 <text x="294" y="13">Jan</text>
-<text x="350" y="13">Fev</text>
+<text x="350" y="13">Feb</text>
 <text x="406" y="13">Mar</text>
-<text x="476" y="13">Abr</text>
-<text x="532" y="13">Mai</text>
+<text x="476" y="13">Apr</text>
+<text x="532" y="13">May</text>
 <text x="602" y="13">Jun</text>
 <text x="658" y="13">Jul</text>
-<text x="714" y="13">Ago</text>
-<text x="0" y="43">Seg</text>
-<text x="0" y="71">Qua</text>
-<text x="0" y="99">Sex</text>
+<text x="714" y="13">Aug</text>
+<text x="0" y="43">Mon</text>
+<text x="0" y="71">Wed</text>
+<text x="0" y="99">Fri</text>
 <rect class="cell l0" x="28" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.000s"><title>2025-08-24: 0 contributions</title></rect>
 <rect class="cell l0" x="28" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.012s"><title>2025-08-25: 0 contributions</title></rect>
 <rect class="cell l0" x="28" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.024s"><title>2025-08-26: 0 contributions</title></rect>
@@ -411,12 +411,12 @@
 <rect class="cell l0" x="756" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.672s"><title>2026-08-27: 0 contributions</title></rect>
 <rect class="cell l0" x="756" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:0.684s"><title>2026-08-28: 0 contributions</title></rect>
 <rect class="cell l0" x="756" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:0.696s"><title>2026-08-29: 0 contributions</title></rect>
-<text x="28" y="142">Menos</text>
-<rect class="l0" x="70" y="133" width="11" height="11" rx="2" ry="2"/>
-<rect class="l1" x="84" y="133" width="11" height="11" rx="2" ry="2"/>
-<rect class="l2" x="98" y="133" width="11" height="11" rx="2" ry="2"/>
-<rect class="l3" x="112" y="133" width="11" height="11" rx="2" ry="2"/>
-<rect class="l4" x="126" y="133" width="11" height="11" rx="2" ry="2"/>
-<text x="146" y="142">Mais</text>
-<text class="footer" x="28" y="157">278 contribuições no último ano</text>
+<text x="28" y="142">Less</text>
+<rect class="l0" x="62" y="133" width="11" height="11" rx="2" ry="2"/>
+<rect class="l1" x="76" y="133" width="11" height="11" rx="2" ry="2"/>
+<rect class="l2" x="90" y="133" width="11" height="11" rx="2" ry="2"/>
+<rect class="l3" x="104" y="133" width="11" height="11" rx="2" ry="2"/>
+<rect class="l4" x="118" y="133" width="11" height="11" rx="2" ry="2"/>
+<text x="138" y="142">More</text>
+<text class="footer" x="28" y="157">278 contributions in the last year</text>
 </svg>

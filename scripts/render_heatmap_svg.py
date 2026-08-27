@@ -68,9 +68,9 @@ BOTTOM_PAD = 46  # room for legend + footer stats
 
 FONT_FAMILY = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
 
-MONTH_ABBR = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
-              "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
-WEEKDAY_LABELS = {1: "Seg", 3: "Qua", 5: "Sex"}  # dow index -> label (Mon/Wed/Fri)
+MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+WEEKDAY_LABELS = {1: "Mon", 3: "Wed", 5: "Fri"}  # dow index -> label
 
 
 def load_data():
@@ -187,15 +187,15 @@ def main():
     # legend: Less [boxes] More
     legend_y = TOP_PAD + grid_h + 18
     legend_x = LEFT_PAD
-    svg.append(f'<text x="{legend_x}" y="{legend_y + CELL - 2}">Menos</text>')
-    lx = legend_x + 42
+    svg.append(f'<text x="{legend_x}" y="{legend_y + CELL - 2}">Less</text>')
+    lx = legend_x + 34
     for cls in CELL_CLASS[:5]:
         svg.append(
             f'<rect class="{cls}" x="{lx}" y="{legend_y}" width="{CELL}" height="{CELL}" '
             f'rx="{RADIUS}" ry="{RADIUS}"/>'
         )
         lx += CELL + GAP
-    svg.append(f'<text x="{lx + 6}" y="{legend_y + CELL - 2}">Mais</text>')
+    svg.append(f'<text x="{lx + 6}" y="{legend_y + CELL - 2}">More</text>')
 
     # footer stats
     total = data.get("total_contributions")
@@ -203,9 +203,9 @@ def main():
     footer_y = legend_y + 24
     footer_parts = []
     if total is not None:
-        footer_parts.append(f"{total} contribuições no último ano")
+        footer_parts.append(f"{total} contributions in the last year")
     if streak:
-        footer_parts.append(f"streak atual: {streak} dias")
+        footer_parts.append(f"current streak: {streak} days")
     if footer_parts:
         svg.append(f'<text class="footer" x="{LEFT_PAD}" y="{footer_y}">{" | ".join(footer_parts)}</text>')
 

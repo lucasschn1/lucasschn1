@@ -29,17 +29,17 @@ OUT_PATH = os.path.join(ROOT, "assets", "whoami-card.svg")
 FONT_FAMILY = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
 
 # ---- portrait --------------------------------------------------------
-ART_FS = 13.0
+ART_FS = 10.5
 ART_CHAR_W = ART_FS * 0.6
 ART_LINE_H = ART_FS * 1.18
 
 # ---- info panel -----------------------------------------------------
-INFO_FS = 14.0
+INFO_FS = 18.0
 INFO_CHAR_W = INFO_FS * 0.6
-INFO_LINE_H = INFO_FS * 1.7
+INFO_LINE_H = INFO_FS * 1.8
 
-PAD = 32
-GAP = 44
+PAD = 36
+GAP = 40
 
 # ---- theme (dark defaults, light override via @media) ---------------
 THEME_CSS = """
