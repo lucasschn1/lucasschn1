@@ -20,7 +20,7 @@ OUT_PATH = os.path.join(ROOT, "assets", "ascii-portrait.svg")
 
 # ---- look & feel -----------------------------------------------------
 FONT_FAMILY = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
-FONT_SIZE = 13.5
+FONT_SIZE = 15.5
 CHAR_W = FONT_SIZE * 0.6      # monospace advance width (em-relative)
 LINE_H = FONT_SIZE * 1.05
 PAD_X = 10
@@ -45,7 +45,18 @@ def load_rows():
         lines.pop(0)
     while lines and lines[-1].strip() == "":
         lines.pop()
-    return lines
+    # strip the common leading whitespace so the art sits tight in the
+    # viewBox (keeps it visually centered when embedded at a fixed width).
+    # base the dedent on the "body" rows (ignore short detached specks so a
+    # stray fragment doesn't pin the whole block to the left edge).
+    body = [ln for ln in lines if len(ln.strip()) >= 20]
+    ref = body or [ln for ln in lines if ln.strip()]
+    if ref:
+        indent = min(len(ln) - len(ln.lstrip(" ")) for ln in ref)
+        if indent:
+            lines = [ln[min(indent, len(ln) - len(ln.lstrip(" "))):]
+                     if ln.strip() else ln for ln in lines]
+    return [ln.rstrip() for ln in lines]
 
 
 def build_svg(rows):
