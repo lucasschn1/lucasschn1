@@ -1,0 +1,38 @@
+# Central config for the neofetch-style info card (assets/info-card.svg).
+# Edit this file and re-run `python scripts/make_info_card.py` to regenerate
+# the card -- you never need to touch the SVG-building code below.
+#
+# Lines marked "# TODO" are placeholders Lucas asked to fill in later.
+
+username: lucasschn1
+
+os: Windows
+role: "Full Stack Dev (Jr.) @ S Nautica"
+ide: "VS Code"
+
+languages_programming:
+  - TypeScript
+  - JavaScript
+  - PHP
+  - Python
+  - Java
+
+languages_spoken:
+  - Português
+  - Inglês
+
+# TODO: replace with what you actually want to show here
+hobbies_tech:
+  - Open Source
+  - System Design
+
+# TODO: replace with what you actually want to show here
+hobbies_life:
+  - Música
+  - Jogos
+
+contact:
+  email: lcordeiro183@gmail.com
+  linkedin: lucas-schneider-c
+  # TODO: fill in or leave blank to omit the Discord line entirely
+  discord: ""
