@@ -1,53 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1068.8" height="410.1" viewBox="0 0 1068.8 410.1" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
-<rect x="0.5" y="0.5" width="1067.8" height="409.1" rx="10" fill="#0d1117" stroke="#30363d"/>
-<g font-size="11.0" fill="#c9d1d9">
-<text x="26.0" y="37.0" xml:space="preserve">                           *##**######%###</text>
-<text x="26.0" y="48.5" xml:space="preserve">                        #####%%%%@%@@@@@%##*#</text>
-<text x="26.0" y="60.1" xml:space="preserve">                       ###%@@@@@@@@@@@@@@%%###*</text>
-<text x="26.0" y="71.7" xml:space="preserve">                      #%%@@%#****##*+**#%@%%####</text>
-<text x="26.0" y="83.2" xml:space="preserve">                      %%@%*+=======--==++*#%@@%@</text>
-<text x="26.0" y="94.8" xml:space="preserve">                     @@%*=---==========++=+*@@@@@</text>
-<text x="26.0" y="106.3" xml:space="preserve">                     @@%+=-----===----=====+#@@@</text>
-<text x="26.0" y="117.9" xml:space="preserve">                     @@%+==++**++===++++++++*%@@</text>
-<text x="26.0" y="129.4" xml:space="preserve">                      @%#*++***##%%%##*++**#@@@@</text>
-<text x="26.0" y="140.9" xml:space="preserve">                     ++****##%****=***#%%%####@*</text>
-<text x="26.0" y="152.5" xml:space="preserve">                    ****++++++++*==+*++***+**##%#</text>
-<text x="26.0" y="164.1" xml:space="preserve">                     ***+===++*++==+**+++++**#***</text>
-<text x="26.0" y="175.6" xml:space="preserve">                     +++++==++++++++**++=+++**++</text>
-<text x="26.0" y="187.2" xml:space="preserve">                      **++++*++**#%%#*++****##++</text>
-<text x="26.0" y="198.7" xml:space="preserve">                       #**++****%##%#******#%%</text>
-<text x="26.0" y="210.2" xml:space="preserve">                       ###*++++***+*#**+**#%%@</text>
-<text x="26.0" y="221.8" xml:space="preserve">                        %%##*+++*****++**%%%%</text>
-<text x="26.0" y="233.4" xml:space="preserve">                         @%%##++++++++*#%@@@</text>
-<text x="26.0" y="244.9" xml:space="preserve">                         **%@%#*++***#%@@@%#</text>
-<text x="26.0" y="256.5" xml:space="preserve">                         +**#%@@%%%%@@@@%#*%@</text>
-<text x="26.0" y="268.0" xml:space="preserve">                       @@%*+**##%%@@@%#*****@@@@</text>
-<text x="26.0" y="279.6" xml:space="preserve">                     @@@@#++++++******++++++#@@@@@</text>
-<text x="26.0" y="291.1" xml:space="preserve">                   @@@@@%*+++++++++++++++=++@@@@@%%%</text>
-<text x="26.0" y="302.7" xml:space="preserve">               ++*%%@@@@@#++++++++++=+===*@@@@@@@@@%*++</text>
-<text x="26.0" y="314.2" xml:space="preserve">           ==++*%%%@@@@@@@%#++++++==+#@%%@@@@@@@@@@@#+++*++</text>
-<text x="26.0" y="325.8" xml:space="preserve">        ==++++#%%%@@%%@@@@#%@@@@@@@@@%%@@@@@@@@@@@@@%*+++++++++</text>
-<text x="26.0" y="337.3" xml:space="preserve">     =++++++*%%%%@%+*#@@@@@%%@@@@@@%%@@@@@@@@@@@@@@@@#**+++++++***</text>
-<text x="26.0" y="348.9" xml:space="preserve">   ++++++++*%@@@@@%#*#@@@@@@%%@@@@#@@@@@@%*#@@@@@@@@@%***+***++*+++*</text>
-<text x="26.0" y="360.4" xml:space="preserve">  ++*+****%@@@@@@@@%#%@@@@@@@@%@%@@@@@@@##%@@%@@@@@@@%***********+**+</text>
-<text x="26.0" y="372.0" xml:space="preserve"> *+*****+**#%%%######%@@@@@@@@%*@@@@@@@%%@@%%@@@@@@@@@#**************+</text>
-<text x="26.0" y="383.5" xml:space="preserve">  *********#%##*#####%@@@@@@@%=:@@@@@@%#%@##%%%%%%@@@%****************</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1208.4" height="539.5" viewBox="0 0 1208.4 539.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
+<style>
+  :root{
+    --bg:#0d1117; --border:#30363d;
+    --header:#39d353; --value:#c9d1d9; --rule:#30363d;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#ffffff; --border:#d0d7de;
+      --header:#1a7f37; --value:#1f2328; --rule:#d0d7de;
+    }
+  }
+  .panel{fill:var(--bg);stroke:var(--border);}
+  .art,.value{fill:var(--value);}
+  .header{fill:var(--header);font-weight:600;}
+  .rule{stroke:var(--rule);}
+</style>
+<rect class="panel" x="0.5" y="0.5" width="1207.4" height="538.5" rx="10"/>
+<g font-size="13.0" class="art">
+<text x="32.0" y="45.0" xml:space="preserve">                           *##**######%###</text>
+<text x="32.0" y="60.3" xml:space="preserve">                        #####%%%%@%@@@@@%##*#</text>
+<text x="32.0" y="75.7" xml:space="preserve">                       ###%@@@@@@@@@@@@@@%%###*</text>
+<text x="32.0" y="91.0" xml:space="preserve">                      #%%@@%#****##*+**#%@%%####</text>
+<text x="32.0" y="106.4" xml:space="preserve">                      %%@%*+=======--==++*#%@@%@</text>
+<text x="32.0" y="121.7" xml:space="preserve">                     @@%*=---==========++=+*@@@@@</text>
+<text x="32.0" y="137.0" xml:space="preserve">                     @@%+=-----===----=====+#@@@</text>
+<text x="32.0" y="152.4" xml:space="preserve">                     @@%+==++**++===++++++++*%@@</text>
+<text x="32.0" y="167.7" xml:space="preserve">                      @%#*++***##%%%##*++**#@@@@</text>
+<text x="32.0" y="183.1" xml:space="preserve">                     ++****##%****=***#%%%####@*</text>
+<text x="32.0" y="198.4" xml:space="preserve">                    ****++++++++*==+*++***+**##%#</text>
+<text x="32.0" y="213.7" xml:space="preserve">                     ***+===++*++==+**+++++**#***</text>
+<text x="32.0" y="229.1" xml:space="preserve">                     +++++==++++++++**++=+++**++</text>
+<text x="32.0" y="244.4" xml:space="preserve">                      **++++*++**#%%#*++****##++</text>
+<text x="32.0" y="259.8" xml:space="preserve">                       #**++****%##%#******#%%</text>
+<text x="32.0" y="275.1" xml:space="preserve">                       ###*++++***+*#**+**#%%@</text>
+<text x="32.0" y="290.4" xml:space="preserve">                        %%##*+++*****++**%%%%</text>
+<text x="32.0" y="305.8" xml:space="preserve">                         @%%##++++++++*#%@@@</text>
+<text x="32.0" y="321.1" xml:space="preserve">                         **%@%#*++***#%@@@%#</text>
+<text x="32.0" y="336.5" xml:space="preserve">                         +**#%@@%%%%@@@@%#*%@</text>
+<text x="32.0" y="351.8" xml:space="preserve">                       @@%*+**##%%@@@%#*****@@@@</text>
+<text x="32.0" y="367.1" xml:space="preserve">                     @@@@#++++++******++++++#@@@@@</text>
+<text x="32.0" y="382.5" xml:space="preserve">                   @@@@@%*+++++++++++++++=++@@@@@%%%</text>
+<text x="32.0" y="397.8" xml:space="preserve">               ++*%%@@@@@#++++++++++=+===*@@@@@@@@@%*++</text>
+<text x="32.0" y="413.2" xml:space="preserve">           ==++*%%%@@@@@@@%#++++++==+#@%%@@@@@@@@@@@#+++*++</text>
+<text x="32.0" y="428.5" xml:space="preserve">        ==++++#%%%@@%%@@@@#%@@@@@@@@@%%@@@@@@@@@@@@@%*+++++++++</text>
+<text x="32.0" y="443.8" xml:space="preserve">     =++++++*%%%%@%+*#@@@@@%%@@@@@@%%@@@@@@@@@@@@@@@@#**+++++++***</text>
+<text x="32.0" y="459.2" xml:space="preserve">   ++++++++*%@@@@@%#*#@@@@@@%%@@@@#@@@@@@%*#@@@@@@@@@%***+***++*+++*</text>
+<text x="32.0" y="474.5" xml:space="preserve">  ++*+****%@@@@@@@@%#%@@@@@@@@%@%@@@@@@@##%@@%@@@@@@@%***********+**+</text>
+<text x="32.0" y="489.9" xml:space="preserve"> *+*****+**#%%%######%@@@@@@@@%*@@@@@@@%%@@%%@@@@@@@@@#**************+</text>
+<text x="32.0" y="505.2" xml:space="preserve">  *********#%##*#####%@@@@@@@%=:@@@@@@%#%@##%%%%%%@@@%****************</text>
 </g>
-<g font-size="13.0">
-<text x="528.0" y="48.77" xml:space="preserve" fill="#39d353" font-weight='600'>lucasschn1@github</text>
-<line x1="528.0" y1="63.72" x2="1042.8" y2="63.72" stroke="#30363d"/>
-<text x="528.0" y="81.01" xml:space="preserve" fill="#c9d1d9">OS: .................... Windows, Linux</text>
-<text x="528.0" y="101.16" xml:space="preserve" fill="#c9d1d9">Role: .................. Full Stack Dev (Jr.) @ S Nautica</text>
-<text x="528.0" y="121.31" xml:space="preserve" fill="#c9d1d9">IDE: ................... VS Code, JetBrains IDEs</text>
-<text x="528.0" y="152.54" xml:space="preserve" fill="#c9d1d9">Languages.Programming: . TypeScript, JavaScript, PHP, Python, Java</text>
-<text x="528.0" y="172.69" xml:space="preserve" fill="#c9d1d9">Languages.Spoken: ...... Português, Inglês</text>
-<text x="528.0" y="203.92" xml:space="preserve" fill="#c9d1d9">Hobbies.Tech: .......... Open Source, System Design, ESP32 / IoT</text>
-<text x="528.0" y="224.07" xml:space="preserve" fill="#c9d1d9">Hobbies.Life: .......... Música, Jogos</text>
-<text x="528.0" y="255.30" xml:space="preserve" fill="#39d353" font-weight='600'>Contact</text>
-<text x="528.0" y="275.45" xml:space="preserve" fill="#c9d1d9">Email.Personal: ........ lcordeiro183@gmail.com</text>
-<text x="528.0" y="295.60" xml:space="preserve" fill="#c9d1d9">LinkedIn: .............. /in/lucas-schneider-c</text>
-<text x="528.0" y="326.84" xml:space="preserve" fill="#39d353" font-weight='600'>GitHub Stats</text>
-<text x="528.0" y="346.99" xml:space="preserve" fill="#c9d1d9">Repos: ....... 13    Stars: ...... 0</text>
-<text x="528.0" y="367.13" xml:space="preserve" fill="#c9d1d9">Contributions (1y): .. 278  Followers: .. 3</text>
+<g font-size="14.0">
+<text class="header" x="622.0" y="83.85" xml:space="preserve">lucasschn1@github</text>
+<line class="rule" x1="622.0" y1="102.05" x2="1176.4" y2="102.05"/>
+<text class="value" x="622.0" y="121.93" xml:space="preserve">OS: .................... Windows, Linux</text>
+<text class="value" x="622.0" y="145.73" xml:space="preserve">Role: .................. Full Stack Dev (Jr.) @ S Nautica</text>
+<text class="value" x="622.0" y="169.53" xml:space="preserve">IDE: ................... VS Code, JetBrains IDEs</text>
+<text class="value" x="622.0" y="206.42" xml:space="preserve">Languages.Programming: . TypeScript, JavaScript, PHP, Python, Java</text>
+<text class="value" x="622.0" y="230.22" xml:space="preserve">Languages.Spoken: ...... Português, Inglês</text>
+<text class="value" x="622.0" y="267.11" xml:space="preserve">Hobbies.Tech: .......... Open Source, System Design, ESP32 / IoT</text>
+<text class="value" x="622.0" y="290.91" xml:space="preserve">Hobbies.Life: .......... Música, Jogos</text>
+<text class="header" x="622.0" y="327.80" xml:space="preserve">Contact</text>
+<text class="value" x="622.0" y="351.60" xml:space="preserve">Email.Personal: ........ lcordeiro183@gmail.com</text>
+<text class="value" x="622.0" y="375.40" xml:space="preserve">LinkedIn: .............. /in/lucas-schneider-c</text>
+<text class="header" x="622.0" y="412.29" xml:space="preserve">GitHub Stats</text>
+<text class="value" x="622.0" y="436.09" xml:space="preserve">Repos: ....... 13    Stars: ...... 0</text>
+<text class="value" x="622.0" y="459.89" xml:space="preserve">Contributions (1y): .. 278  Followers: .. 3</text>
 </g>
 </svg>

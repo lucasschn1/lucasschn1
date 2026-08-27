@@ -5,9 +5,13 @@ render_heatmap_svg.py
 Reads data/contributions.json (written by fetch_contributions.py) and draws
 the classic 53-week x 7-day contribution calendar as rounded, colored boxes
 using a GitHub-ish green ramp. The grid reveals once, diagonally, with each
-box sliding down into place (CSS keyframes with animation-delay, `forwards`
-so it freezes at the end -- no looping "glow"). Adds a Less->More legend
-and a stats footer.
+box sliding into place (CSS keyframes with animation-delay, `forwards` so it
+freezes at the end -- no looping). Adds a Less->More legend and a stats
+footer.
+
+Colors are driven by CSS custom properties with a
+`@media (prefers-color-scheme: light)` override, so the single SVG adapts to
+GitHub's light and dark themes on its own.
 
 Output: assets/contrib-heatmap.svg
 """
@@ -20,9 +24,37 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(ROOT, "data", "contributions.json")
 OUT_PATH = os.path.join(ROOT, "assets", "contrib-heatmap.svg")
 
-# none -> brightest; index 5 is a neon top end reserved for a single
-# "record day" highlight rather than a normal contribution level.
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+# CSS class per contribution level (0..4); "rec" is the single record-day
+# highlight. Actual colors live in THEME_CSS (dark default + light override).
+CELL_CLASS = ["l0", "l1", "l2", "l3", "l4", "rec"]
+
+STAGGER = 0.012
+CELL_ANIM_DUR = 0.35
+
+THEME_CSS = """
+  :root{
+    --text:#7d8590; --footer:#c9d1d9;
+    --l0:#161b22; --l1:#0e4429; --l2:#006d32;
+    --l3:#26a641; --l4:#39d353; --rec:#69f0a0;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --text:#57606a; --footer:#1f2328;
+      --l0:#ebedf0; --l1:#9be9a8; --l2:#40c463;
+      --l3:#30a14e; --l4:#216e39; --rec:#1a7f37;
+    }
+  }
+  text{font-size:10px;fill:var(--text);}
+  .footer{font-size:12px;fill:var(--footer);}
+  .l0{fill:var(--l0);} .l1{fill:var(--l1);} .l2{fill:var(--l2);}
+  .l3{fill:var(--l3);} .l4{fill:var(--l4);} .rec{fill:var(--rec);}
+  .cell{opacity:0;transform:translateY(-6px);
+        animation:slideIn %.2fs ease-out forwards;}
+  @keyframes slideIn{
+    from{opacity:0;transform:translateY(-6px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+""" % CELL_ANIM_DUR
 
 WEEKS = 53
 DAYS = 7
@@ -35,11 +67,6 @@ RIGHT_PAD = 12
 BOTTOM_PAD = 46  # room for legend + footer stats
 
 FONT_FAMILY = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
-TEXT_COLOR = "#7d8590"
-FOOTER_COLOR = "#c9d1d9"
-
-STAGGER = 0.012
-CELL_ANIM_DUR = 0.35
 
 MONTH_ABBR = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
               "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
@@ -129,18 +156,7 @@ def main():
         f'viewBox="0 0 {width} {height}" font-family="{FONT_FAMILY}">'
     )
     svg.append(f'<rect width="100%" height="100%" fill="transparent"/>')
-    svg.append(
-        f'<style>'
-        f'text{{font-size:10px;fill:{TEXT_COLOR};}}'
-        f'.footer{{font-size:12px;fill:{FOOTER_COLOR};}}'
-        f'.cell{{opacity:0;transform:translateY(-6px);'
-        f'animation:slideIn {CELL_ANIM_DUR}s ease-out forwards;}}'
-        f'@keyframes slideIn{{'
-        f'from{{opacity:0;transform:translateY(-6px);}}'
-        f'to{{opacity:1;transform:translateY(0);}}'
-        f'}}'
-        f'</style>'
-    )
+    svg.append(f'<style>{THEME_CSS}</style>')
 
     # month labels
     for week_idx, label in month_labels.items():
@@ -157,15 +173,15 @@ def main():
         x = LEFT_PAD + cell["week"] * (CELL + GAP)
         y = TOP_PAD + cell["dow"] * (CELL + GAP)
         level = min(cell["level"], 4)
-        color = PALETTE[level]
+        cls = CELL_CLASS[level]
         if best is not None and cell["date"] == best["date"]:
-            color = PALETTE[5]
+            cls = CELL_CLASS[5]
         delay = (cell["week"] + cell["dow"]) * STAGGER
         title = f'{cell["date"]}: {cell["count"] if cell["count"] is not None else "?"} contributions'
         svg.append(
-            f'<rect class="cell" x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
-            f'rx="{RADIUS}" ry="{RADIUS}" fill="{color}" '
-            f'style="animation-delay:{delay:.3f}s"><title>{title}</title></rect>'
+            f'<rect class="cell {cls}" x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
+            f'rx="{RADIUS}" ry="{RADIUS}" style="animation-delay:{delay:.3f}s">'
+            f'<title>{title}</title></rect>'
         )
 
     # legend: Less [boxes] More
@@ -173,10 +189,10 @@ def main():
     legend_x = LEFT_PAD
     svg.append(f'<text x="{legend_x}" y="{legend_y + CELL - 2}">Menos</text>')
     lx = legend_x + 42
-    for color in PALETTE[:5]:
+    for cls in CELL_CLASS[:5]:
         svg.append(
-            f'<rect x="{lx}" y="{legend_y}" width="{CELL}" height="{CELL}" '
-            f'rx="{RADIUS}" ry="{RADIUS}" fill="{color}"/>'
+            f'<rect class="{cls}" x="{lx}" y="{legend_y}" width="{CELL}" height="{CELL}" '
+            f'rx="{RADIUS}" ry="{RADIUS}"/>'
         )
         lx += CELL + GAP
     svg.append(f'<text x="{lx + 6}" y="{legend_y + CELL - 2}">Mais</text>')

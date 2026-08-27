@@ -6,6 +6,10 @@ Renders ONE static terminal-style panel with the ASCII portrait and the
 neofetch-style info side by side -- no animation. This replaces the previously
 separate assets/ascii-portrait.svg + assets/info-card.svg pair.
 
+Colors are driven by CSS custom properties with a
+`@media (prefers-color-scheme: light)` override, so the single SVG adapts to
+GitHub's light and dark themes on its own (no <picture> needed).
+
 Row/line content is reused from the existing renderers:
   - load_rows()   from make_ascii_svg   (cropped + centered ASCII art)
   - build_lines() from make_info_card    (OS/Role/IDE/... key-value rows)
@@ -25,24 +29,35 @@ OUT_PATH = os.path.join(ROOT, "assets", "whoami-card.svg")
 FONT_FAMILY = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
 
 # ---- portrait --------------------------------------------------------
-ART_FS = 11.0
+ART_FS = 13.0
 ART_CHAR_W = ART_FS * 0.6
-ART_LINE_H = ART_FS * 1.05
-ART_FILL = "#c9d1d9"
+ART_LINE_H = ART_FS * 1.18
 
 # ---- info panel -----------------------------------------------------
-INFO_FS = 13.0
+INFO_FS = 14.0
 INFO_CHAR_W = INFO_FS * 0.6
-INFO_LINE_H = INFO_FS * 1.55
+INFO_LINE_H = INFO_FS * 1.7
 
-PAD = 26
-GAP = 40
+PAD = 32
+GAP = 44
 
-PANEL_BG = "#0d1117"
-PANEL_BORDER = "#30363d"
-COLOR_HEADER = "#39d353"
-COLOR_VALUE = "#c9d1d9"
-COLOR_RULE = "#30363d"
+# ---- theme (dark defaults, light override via @media) ---------------
+THEME_CSS = """
+  :root{
+    --bg:#0d1117; --border:#30363d;
+    --header:#39d353; --value:#c9d1d9; --rule:#30363d;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#ffffff; --border:#d0d7de;
+      --header:#1a7f37; --value:#1f2328; --rule:#d0d7de;
+    }
+  }
+  .panel{fill:var(--bg);stroke:var(--border);}
+  .art,.value{fill:var(--value);}
+  .header{fill:var(--header);font-weight:600;}
+  .rule{stroke:var(--rule);}
+"""
 
 
 def measure_art(rows):
@@ -65,7 +80,7 @@ def measure_info(lines):
 
 
 def art_svg(rows, x0, y0):
-    out = [f'<g font-size="{ART_FS}" fill="{ART_FILL}">']
+    out = [f'<g font-size="{ART_FS}" class="art">']
     for i, line in enumerate(rows):
         if not line.strip():
             continue
@@ -85,20 +100,18 @@ def info_svg(lines, x0, y0, max_chars):
         if kind == "rule":
             yy = y - INFO_FS * 0.4
             out.append(
-                f'<line x1="{x0:.1f}" y1="{yy:.2f}" '
-                f'x2="{x0 + max_chars * INFO_CHAR_W:.1f}" y2="{yy:.2f}" '
-                f'stroke="{COLOR_RULE}"/>'
+                f'<line class="rule" x1="{x0:.1f}" y1="{yy:.2f}" '
+                f'x2="{x0 + max_chars * INFO_CHAR_W:.1f}" y2="{yy:.2f}"/>'
             )
             y += INFO_LINE_H * 0.6
             continue
         if kind == "blank":
             y += INFO_LINE_H * 0.55
             continue
-        color = COLOR_HEADER if kind == "header" else COLOR_VALUE
-        weight = " font-weight='600'" if kind == "header" else ""
+        cls = "header" if kind == "header" else "value"
         out.append(
-            f'<text x="{x0:.1f}" y="{y:.2f}" xml:space="preserve" '
-            f'fill="{color}"{weight}>{esc(text)}</text>'
+            f'<text class="{cls}" x="{x0:.1f}" y="{y:.2f}" '
+            f'xml:space="preserve">{esc(text)}</text>'
         )
         y += INFO_LINE_H
     out.append("</g>")
@@ -122,8 +135,9 @@ def build_svg(rows, lines):
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.1f}" '
         f'height="{height:.1f}" viewBox="0 0 {width:.1f} {height:.1f}" '
         f'font-family="{FONT_FAMILY}">',
-        f'<rect x="0.5" y="0.5" width="{width - 1:.1f}" height="{height - 1:.1f}" '
-        f'rx="10" fill="{PANEL_BG}" stroke="{PANEL_BORDER}"/>',
+        f'<style>{THEME_CSS}</style>',
+        f'<rect class="panel" x="0.5" y="0.5" width="{width - 1:.1f}" '
+        f'height="{height - 1:.1f}" rx="10"/>',
     ]
     svg += art_svg(rows, art_x, art_y)
     svg += info_svg(lines, info_x, info_y, max_chars)
