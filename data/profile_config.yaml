@@ -6,9 +6,9 @@
 
 username: lucasschn1
 
-os: Windows
+os: "Windows, Linux"
 role: "Full Stack Dev (Jr.) @ S Nautica"
-ide: "VS Code"
+ide: "VS Code, JetBrains IDEs"
 
 languages_programming:
   - TypeScript
@@ -25,6 +25,7 @@ languages_spoken:
 hobbies_tech:
   - Open Source
   - System Design
+  - ESP32 / IoT
 
 # TODO: replace with what you actually want to show here
 hobbies_life:

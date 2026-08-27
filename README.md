@@ -6,12 +6,7 @@
 <br><br>
 
 <h3><code>lucasschn1@github ~ $ whoami</code></h3>
-<table>
-  <tr>
-    <td valign="top"><img src="./assets/ascii-portrait.svg" width="460" /></td>
-    <td valign="top"><img src="./assets/info-card.svg" width="490" /></td>
-  </tr>
-</table>
+<img src="./assets/whoami-card.svg" width="900" />
 
 </div>
 

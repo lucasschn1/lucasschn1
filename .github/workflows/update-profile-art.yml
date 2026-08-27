@@ -37,11 +37,8 @@ jobs:
       - name: Render heatmap SVG
         run: python scripts/render_heatmap_svg.py
 
-      - name: Render info card SVG
-        run: python scripts/make_info_card.py
-
-      - name: Render ASCII portrait SVG
-        run: python scripts/make_ascii_svg.py
+      - name: Render whoami card SVG (portrait + info, static)
+        run: python scripts/make_whoami_card.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -50,5 +47,4 @@ jobs:
             data/contributions.json
             data/github_stats.json
             assets/contrib-heatmap.svg
-            assets/info-card.svg
-            assets/ascii-portrait.svg
+            assets/whoami-card.svg
