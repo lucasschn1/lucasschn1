@@ -19,6 +19,7 @@ Output: assets/contrib-heatmap.svg
 import datetime
 import json
 import os
+import random
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(ROOT, "data", "contributions.json")
@@ -28,8 +29,12 @@ OUT_PATH = os.path.join(ROOT, "assets", "contrib-heatmap.svg")
 # highlight. Actual colors live in THEME_CSS (dark default + light override).
 CELL_CLASS = ["l0", "l1", "l2", "l3", "l4", "rec"]
 
-STAGGER = 0.012
-CELL_ANIM_DUR = 0.35
+# "matrix rain" reveal: cells drop in column by column, top to bottom, each
+# landing with a bright flash that then settles to its real color. Plays once.
+COL_STEP = 0.055    # seconds between adjacent weeks (left -> right sweep)
+ROW_STEP = 0.130    # seconds between rows within a column (the downward fall)
+COL_JITTER = 0.22   # max random head-start per column, for rain irregularity
+CELL_ANIM_DUR = 0.55
 
 THEME_CSS = """
   :root{
@@ -48,13 +53,16 @@ THEME_CSS = """
   .footer{font-size:12px;fill:var(--footer);}
   .l0{fill:var(--l0);} .l1{fill:var(--l1);} .l2{fill:var(--l2);}
   .l3{fill:var(--l3);} .l4{fill:var(--l4);} .rec{fill:var(--rec);}
-  .cell{opacity:0;transform:translateY(-6px);
-        animation:slideIn %.2fs ease-out forwards;}
-  @keyframes slideIn{
-    from{opacity:0;transform:translateY(-6px);}
-    to{opacity:1;transform:translateY(0);}
+  .cell{opacity:0;animation:rain __DUR__s ease-out forwards;}
+  @keyframes rain{
+    0%   {opacity:0;transform:translateY(-7px);filter:brightness(2.6) saturate(1.6);}
+    30%  {opacity:1;transform:translateY(0);   filter:brightness(2.6) saturate(1.6);}
+    100% {opacity:1;transform:translateY(0);   filter:none;}
   }
-""" % CELL_ANIM_DUR
+  @media (prefers-reduced-motion: reduce){
+    .cell{animation:none;opacity:1;}
+  }
+""".replace("__DUR__", f"{CELL_ANIM_DUR:.2f}")
 
 WEEKS = 53
 DAYS = 7
@@ -168,7 +176,10 @@ def main():
         y = TOP_PAD + dow * (CELL + GAP) + CELL - 2
         svg.append(f'<text x="0" y="{y}">{label}</text>')
 
-    # cells, diagonal stagger: delay grows with (week + dow)
+    # cells: "matrix rain" -- each column starts on its own (jittered) beat and
+    # the cells fall down it row by row.
+    col_head = [w * COL_STEP + random.Random(w).uniform(0, COL_JITTER)
+                for w in range(WEEKS)]
     for cell in grid:
         x = LEFT_PAD + cell["week"] * (CELL + GAP)
         y = TOP_PAD + cell["dow"] * (CELL + GAP)
@@ -176,7 +187,7 @@ def main():
         cls = CELL_CLASS[level]
         if best is not None and cell["date"] == best["date"]:
             cls = CELL_CLASS[5]
-        delay = (cell["week"] + cell["dow"]) * STAGGER
+        delay = col_head[cell["week"]] + cell["dow"] * ROW_STEP
         title = f'{cell["date"]}: {cell["count"] if cell["count"] is not None else "?"} contributions'
         svg.append(
             f'<rect class="cell {cls}" x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
