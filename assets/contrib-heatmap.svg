@@ -411,7 +411,7 @@
 <rect class="cell l0" x="756" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:3.205s"><title>2026-08-24: 0 contributions</title></rect>
 <rect class="cell l1" x="756" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:3.335s"><title>2026-08-25: 2 contributions</title></rect>
 <rect class="cell l1" x="756" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:3.465s"><title>2026-08-26: 1 contributions</title></rect>
-<rect class="cell l4" x="756" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:3.595s"><title>2026-08-27: 20 contributions</title></rect>
+<rect class="cell l4" x="756" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:3.595s"><title>2026-08-27: 24 contributions</title></rect>
 <rect class="cell l0" x="756" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:3.725s"><title>2026-08-28: 0 contributions</title></rect>
 <rect class="cell l0" x="756" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:3.855s"><title>2026-08-29: 0 contributions</title></rect>
 <text x="28" y="142">Less</text>
@@ -421,5 +421,5 @@
 <rect class="l3" x="104" y="133" width="11" height="11" rx="2" ry="2"/>
 <rect class="l4" x="118" y="133" width="11" height="11" rx="2" ry="2"/>
 <text x="138" y="142">More</text>
-<text class="footer" x="28" y="157">298 contributions in the last year | current streak: 3 days</text>
+<text class="footer" x="28" y="157">302 contributions in the last year</text>
 </svg>
