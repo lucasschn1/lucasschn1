@@ -29,11 +29,11 @@ OUT_PATH = os.path.join(ROOT, "assets", "contrib-heatmap.svg")
 # highlight. Actual colors live in THEME_CSS (dark default + light override).
 CELL_CLASS = ["l0", "l1", "l2", "l3", "l4", "rec"]
 
-# "matrix rain" reveal: cells drop in column by column, top to bottom, each
-# landing with a bright flash that then settles to its real color. Plays once.
-COL_STEP = 0.055    # seconds between adjacent weeks (left -> right sweep)
-ROW_STEP = 0.130    # seconds between rows within a column (the downward fall)
-COL_JITTER = 0.22   # max random head-start per column, for rain irregularity
+# "matrix rain" reveal: every column falls top -> bottom at the same time, but
+# each starts on its own random beat so the grid fills like digital rain rather
+# than a sweep. Each cell lands with a bright flash that settles to its color.
+ROW_STEP = 0.16     # seconds between rows within a column (the downward fall)
+COL_SPREAD = 1.7    # window (s) the columns' random start times are spread over
 CELL_ANIM_DUR = 0.55
 
 THEME_CSS = """
@@ -176,9 +176,9 @@ def main():
         y = TOP_PAD + dow * (CELL + GAP) + CELL - 2
         svg.append(f'<text x="0" y="{y}">{label}</text>')
 
-    # cells: "matrix rain" -- each column starts on its own (jittered) beat and
-    # the cells fall down it row by row.
-    col_head = [w * COL_STEP + random.Random(w).uniform(0, COL_JITTER)
+    # cells: "matrix rain" -- each column gets a random start time (no L->R
+    # sweep) and its cells fall straight down, row by row.
+    col_head = [random.Random(w * 2654435761).uniform(0, COL_SPREAD)
                 for w in range(WEEKS)]
     for cell in grid:
         x = LEFT_PAD + cell["week"] * (CELL + GAP)

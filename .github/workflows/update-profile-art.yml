@@ -29,6 +29,11 @@ jobs:
       - name: Fetch contributions (no token)
         run: python scripts/fetch_contributions.py
 
+      - name: Fetch GitHub stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_github_stats.py
+
       - name: Render heatmap SVG
         run: python scripts/render_heatmap_svg.py
 
@@ -40,5 +45,6 @@ jobs:
           commit_message: "chore: refresh profile art [skip ci]"
           file_pattern: >-
             data/contributions.json
+            data/github_stats.json
             assets/contrib-heatmap.svg
             assets/whoami-card.svg

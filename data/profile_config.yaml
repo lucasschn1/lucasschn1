@@ -5,14 +5,23 @@
 username: lucasschn1
 
 os: "Windows, Linux"
-role: "Full Stack Dev (Jr.) @ S Nautica"
-ide: "VS Code, JetBrains IDEs"
+host: "S Nautica"                    # employer / where you work
+title: "Full Stack Developer (Jr.)"  # job title -> shown as "Kernel"
+ide: "IntelliJ IDEA, VS Code"
 
 languages_programming:
   - JavaScript
   - PHP
   - Python
   - Java
+
+# markup / config / query languages -> shown as "Languages.Computer"
+languages_computer:
+  - HTML
+  - CSS
+  - SQL
+  - JSON
+  - YAML
 
 languages_spoken:
   - Portuguese

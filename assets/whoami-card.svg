@@ -1,66 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1244.2" height="501.3" viewBox="0 0 1244.2 501.3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="1321.5" height="613.2" viewBox="0 0 1321.5 613.2" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
 <style>
   :root{
     --bg:#0d1117; --border:#30363d;
-    --header:#39d353; --value:#c9d1d9; --rule:#30363d;
+    --name:#c9d1d9; --label:#e8b98c; --value:#c9d1d9; --dim:#5a626c;
+    --add:#3fb950; --del:#f85149;
   }
   @media (prefers-color-scheme: light){
     :root{
       --bg:#ffffff; --border:#d0d7de;
-      --header:#1a7f37; --value:#1f2328; --rule:#d0d7de;
+      --name:#1f2328; --label:#a15c1e; --value:#1f2328; --dim:#9aa4af;
+      --add:#1a7f37; --del:#cf222e;
     }
   }
   .panel{fill:var(--bg);stroke:var(--border);}
-  .art,.value{fill:var(--value);}
-  .header{fill:var(--header);font-weight:600;}
-  .rule{stroke:var(--rule);}
+  .art{fill:var(--value);}
+  .row{fill:var(--value);}
+  .head{fill:var(--name);}
+  .label{fill:var(--label);}
+  .dim{fill:var(--dim);}
+  .add{fill:var(--add);}
+  .del{fill:var(--del);}
 </style>
-<rect class="panel" x="0.5" y="0.5" width="1243.2" height="500.3" rx="10"/>
-<g font-size="10.5" class="art">
-<text x="36.0" y="69.1" xml:space="preserve">                           *##**######%###</text>
-<text x="36.0" y="81.5" xml:space="preserve">                        #####%%%%@%@@@@@%##*#</text>
-<text x="36.0" y="93.9" xml:space="preserve">                       ###%@@@@@@@@@@@@@@%%###*</text>
-<text x="36.0" y="106.3" xml:space="preserve">                      #%%@@%#****##*+**#%@%%####</text>
-<text x="36.0" y="118.7" xml:space="preserve">                      %%@%*+=======--==++*#%@@%@</text>
-<text x="36.0" y="131.1" xml:space="preserve">                     @@%*=---==========++=+*@@@@@</text>
-<text x="36.0" y="143.4" xml:space="preserve">                     @@%+=-----===----=====+#@@@</text>
-<text x="36.0" y="155.8" xml:space="preserve">                     @@%+==++**++===++++++++*%@@</text>
-<text x="36.0" y="168.2" xml:space="preserve">                      @%#*++***##%%%##*++**#@@@@</text>
-<text x="36.0" y="180.6" xml:space="preserve">                     ++****##%****=***#%%%####@*</text>
-<text x="36.0" y="193.0" xml:space="preserve">                    ****++++++++*==+*++***+**##%#</text>
-<text x="36.0" y="205.4" xml:space="preserve">                     ***+===++*++==+**+++++**#***</text>
-<text x="36.0" y="217.8" xml:space="preserve">                     +++++==++++++++**++=+++**++</text>
-<text x="36.0" y="230.2" xml:space="preserve">                      **++++*++**#%%#*++****##++</text>
-<text x="36.0" y="242.6" xml:space="preserve">                       #**++****%##%#******#%%</text>
-<text x="36.0" y="255.0" xml:space="preserve">                       ###*++++***+*#**+**#%%@</text>
-<text x="36.0" y="267.3" xml:space="preserve">                        %%##*+++*****++**%%%%</text>
-<text x="36.0" y="279.7" xml:space="preserve">                         @%%##++++++++*#%@@@</text>
-<text x="36.0" y="292.1" xml:space="preserve">                         **%@%#*++***#%@@@%#</text>
-<text x="36.0" y="304.5" xml:space="preserve">                         +**#%@@%%%%@@@@%#*%@</text>
-<text x="36.0" y="316.9" xml:space="preserve">                       @@%*+**##%%@@@%#*****@@@@</text>
-<text x="36.0" y="329.3" xml:space="preserve">                     @@@@#++++++******++++++#@@@@@</text>
-<text x="36.0" y="341.7" xml:space="preserve">                   @@@@@%*+++++++++++++++=++@@@@@%%%</text>
-<text x="36.0" y="354.1" xml:space="preserve">               ++*%%@@@@@#++++++++++=+===*@@@@@@@@@%*++</text>
-<text x="36.0" y="366.5" xml:space="preserve">           ==++*%%%@@@@@@@%#++++++==+#@%%@@@@@@@@@@@#+++*++</text>
-<text x="36.0" y="378.9" xml:space="preserve">        ==++++#%%%@@%%@@@@#%@@@@@@@@@%%@@@@@@@@@@@@@%*+++++++++</text>
-<text x="36.0" y="391.2" xml:space="preserve">     =++++++*%%%%@%+*#@@@@@%%@@@@@@%%@@@@@@@@@@@@@@@@#**+++++++***</text>
-<text x="36.0" y="403.6" xml:space="preserve">   ++++++++*%@@@@@%#*#@@@@@@%%@@@@#@@@@@@%*#@@@@@@@@@%***+***++*+++*</text>
-<text x="36.0" y="416.0" xml:space="preserve">  ++*+****%@@@@@@@@%#%@@@@@@@@%@%@@@@@@@##%@@%@@@@@@@%***********+**+</text>
-<text x="36.0" y="428.4" xml:space="preserve"> *+*****+**#%%%######%@@@@@@@@%*@@@@@@@%%@@%%@@@@@@@@@#**************+</text>
-<text x="36.0" y="440.8" xml:space="preserve">  *********#%##*#####%@@@@@@@%==@@@@@@%#%@##%%%%%%@@@%****************</text>
+<rect class="panel" x="0.5" y="0.5" width="1320.5" height="612.2" rx="10"/>
+<g font-size="14.79" class="art">
+<text x="36.0" y="50.8" xml:space="preserve">                           *##**######%###</text>
+<text x="36.0" y="68.3" xml:space="preserve">                        #####%%%%@%@@@@@%##*#</text>
+<text x="36.0" y="85.7" xml:space="preserve">                       ###%@@@@@@@@@@@@@@%%###*</text>
+<text x="36.0" y="103.2" xml:space="preserve">                      #%%@@%#****##*+**#%@%%####</text>
+<text x="36.0" y="120.6" xml:space="preserve">                      %%@%*+=======--==++*#%@@%@</text>
+<text x="36.0" y="138.1" xml:space="preserve">                     @@%*=---==========++=+*@@@@@</text>
+<text x="36.0" y="155.5" xml:space="preserve">                     @@%+=-----===----=====+#@@@</text>
+<text x="36.0" y="173.0" xml:space="preserve">                     @@%+==++**++===++++++++*%@@</text>
+<text x="36.0" y="190.5" xml:space="preserve">                      @%#*++***##%%%##*++**#@@@@</text>
+<text x="36.0" y="207.9" xml:space="preserve">                     ++****##%****=***#%%%####@*</text>
+<text x="36.0" y="225.4" xml:space="preserve">                    ****++++++++*==+*++***+**##%#</text>
+<text x="36.0" y="242.8" xml:space="preserve">                     ***+===++*++==+**+++++**#***</text>
+<text x="36.0" y="260.3" xml:space="preserve">                     +++++==++++++++**++=+++**++</text>
+<text x="36.0" y="277.7" xml:space="preserve">                      **++++*++**#%%#*++****##++</text>
+<text x="36.0" y="295.2" xml:space="preserve">                       #**++****%##%#******#%%</text>
+<text x="36.0" y="312.7" xml:space="preserve">                       ###*++++***+*#**+**#%%@</text>
+<text x="36.0" y="330.1" xml:space="preserve">                        %%##*+++*****++**%%%%</text>
+<text x="36.0" y="347.6" xml:space="preserve">                         @%%##++++++++*#%@@@</text>
+<text x="36.0" y="365.0" xml:space="preserve">                         **%@%#*++***#%@@@%#</text>
+<text x="36.0" y="382.5" xml:space="preserve">                         +**#%@@%%%%@@@@%#*%@</text>
+<text x="36.0" y="400.0" xml:space="preserve">                       @@%*+**##%%@@@%#*****@@@@</text>
+<text x="36.0" y="417.4" xml:space="preserve">                     @@@@#++++++******++++++#@@@@@</text>
+<text x="36.0" y="434.9" xml:space="preserve">                   @@@@@%*+++++++++++++++=++@@@@@%%%</text>
+<text x="36.0" y="452.3" xml:space="preserve">               ++*%%@@@@@#++++++++++=+===*@@@@@@@@@%*++</text>
+<text x="36.0" y="469.8" xml:space="preserve">           ==++*%%%@@@@@@@%#++++++==+#@%%@@@@@@@@@@@#+++*++</text>
+<text x="36.0" y="487.2" xml:space="preserve">        ==++++#%%%@@%%@@@@#%@@@@@@@@@%%@@@@@@@@@@@@@%*+++++++++</text>
+<text x="36.0" y="504.7" xml:space="preserve">     =++++++*%%%%@%+*#@@@@@%%@@@@@@%%@@@@@@@@@@@@@@@@#**+++++++***</text>
+<text x="36.0" y="522.2" xml:space="preserve">   ++++++++*%@@@@@%#*#@@@@@@%%@@@@#@@@@@@%*#@@@@@@@@@%***+***++*+++*</text>
+<text x="36.0" y="539.6" xml:space="preserve">  ++*+****%@@@@@@@@%#%@@@@@@@@%@%@@@@@@@##%@@%@@@@@@@%***********+**+</text>
+<text x="36.0" y="557.1" xml:space="preserve"> *+*****+**#%%%######%@@@@@@@@%*@@@@@@@%%@@%%@@@@@@@@@#**************+</text>
+<text x="36.0" y="574.5" xml:space="preserve">  *********#%##*#####%@@@@@@@%==@@@@@@%#%@##%%%%%%@@@%****************</text>
 </g>
-<g font-size="18.0">
-<text class="header" x="517.0" y="54.00" xml:space="preserve">lucasschn1@github</text>
-<line class="rule" x1="517.0" y1="79.20" x2="1208.2" y2="79.20"/>
-<text class="value" x="517.0" y="105.84" xml:space="preserve">OS: .................... Windows, Linux</text>
-<text class="value" x="517.0" y="138.24" xml:space="preserve">Role: .................. Full Stack Dev (Jr.) @ S Nautica</text>
-<text class="value" x="517.0" y="170.64" xml:space="preserve">IDE: ................... VS Code, JetBrains IDEs</text>
-<text class="value" x="517.0" y="220.86" xml:space="preserve">Languages.Code: ........ JavaScript, PHP, Python, Java</text>
-<text class="value" x="517.0" y="253.26" xml:space="preserve">Languages.Spoken: ...... Portuguese, English</text>
-<text class="value" x="517.0" y="303.48" xml:space="preserve">Hobbies.Tech: .......... Open Source, System Design, ESP32 / IoT</text>
-<text class="value" x="517.0" y="335.88" xml:space="preserve">Hobbies.Life: .......... Music, Gaming</text>
-<text class="header" x="517.0" y="386.10" xml:space="preserve">Contact</text>
-<text class="value" x="517.0" y="418.50" xml:space="preserve">Email.Personal: ........ lcordeiro183@gmail.com</text>
-<text class="value" x="517.0" y="450.90" xml:space="preserve">LinkedIn: .............. /in/lucas-schneider-c</text>
+<g font-size="16.5" xml:space="preserve">
+<text class="head" x="701.4" y="52.50">lucasschn1@github <tspan class="dim">----------------------------------------</tspan></text>
+<text class="row" x="701.4" y="92.10"><tspan class="dim">. </tspan><tspan class="label">OS: </tspan><tspan class="dim">.....................................</tspan> Windows, Linux</text>
+<text class="row" x="701.4" y="118.50"><tspan class="dim">. </tspan><tspan class="label">Host: </tspan><tspan class="dim">........................................</tspan> S Nautica</text>
+<text class="row" x="701.4" y="144.90"><tspan class="dim">. </tspan><tspan class="label">Kernel: </tspan><tspan class="dim">.....................</tspan> Full Stack Developer (Jr.)</text>
+<text class="row" x="701.4" y="171.30"><tspan class="dim">. </tspan><tspan class="label">IDE: </tspan><tspan class="dim">............................</tspan> IntelliJ IDEA, VS Code</text>
+<text class="row" x="701.4" y="210.90"><tspan class="dim">. </tspan><tspan class="label">Languages.Programming: </tspan><tspan class="dim">...</tspan> JavaScript, PHP, Python, Java</text>
+<text class="row" x="701.4" y="237.30"><tspan class="dim">. </tspan><tspan class="label">Languages.Computer: </tspan><tspan class="dim">.........</tspan> HTML, CSS, SQL, JSON, YAML</text>
+<text class="row" x="701.4" y="263.70"><tspan class="dim">. </tspan><tspan class="label">Languages.Real: </tspan><tspan class="dim">....................</tspan> Portuguese, English</text>
+<text class="row" x="701.4" y="303.30"><tspan class="dim">. </tspan><tspan class="label">Hobbies.Tech: </tspan><tspan class="dim">..</tspan> Open Source, System Design, ESP32 / IoT</text>
+<text class="row" x="701.4" y="329.70"><tspan class="dim">. </tspan><tspan class="label">Hobbies.Life: </tspan><tspan class="dim">............................</tspan> Music, Gaming</text>
+<text class="head" x="701.4" y="369.30">- Contact <tspan class="dim">------------------------------------------------</tspan></text>
+<text class="row" x="701.4" y="395.70"><tspan class="dim">. </tspan><tspan class="label">Email.Personal: </tspan><tspan class="dim">.................</tspan> lcordeiro183@gmail.com</text>
+<text class="row" x="701.4" y="422.10"><tspan class="dim">. </tspan><tspan class="label">LinkedIn: </tspan><tspan class="dim">.......................</tspan> /in/lucas-schneider-c/</text>
+<text class="head" x="701.4" y="461.70">- GitHub Stats <tspan class="dim">-------------------------------------------</tspan></text>
+<text class="row" x="701.4" y="488.10"><tspan class="dim">. </tspan><tspan class="label">Repos: </tspan><tspan class="dim">...........</tspan> 14  |  <tspan class="label">PRs: </tspan><tspan class="dim">...........</tspan> 10 (8 merged)</text>
+<text class="row" x="701.4" y="514.50"><tspan class="dim">. </tspan><tspan class="label">Commits: </tspan><tspan class="dim">........</tspan> 249  |  <tspan class="label">Active days (1y): </tspan><tspan class="dim">.........</tspan> 88</text>
+<text class="row" x="701.4" y="540.90"><tspan class="dim">. </tspan><tspan class="label">Contributions (1y): </tspan><tspan class="dim">................................</tspan> 302</text>
+<text class="row" x="701.4" y="567.30"><tspan class="dim">. </tspan><tspan class="label">Lines of Code on GitHub: </tspan>  59,381 ( <tspan class="add">111,399++</tspan>, <tspan class="del">52,018--</tspan> )</text>
 </g>
 </svg>

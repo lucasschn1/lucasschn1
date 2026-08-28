@@ -125,6 +125,13 @@ def compute_streaks(days):
     return current_streak, longest_streak
 
 
+def count_active_days(days):
+    return sum(
+        1 for d in days
+        if ((d["count"] or 0) > 0 if d["count"] is not None else d["level"] > 0)
+    )
+
+
 def compute_best_day(days):
     scored = [d for d in days if d["count"] is not None]
     if not scored:
@@ -155,8 +162,9 @@ def main():
 
     data = {
         "username": USERNAME,
-        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "total_contributions": total,
+        "active_days": count_active_days(days),
         "current_streak": current_streak,
         "longest_streak": longest_streak,
         "best_day": best_day,
