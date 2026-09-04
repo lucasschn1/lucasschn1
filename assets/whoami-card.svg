@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1321.5" height="613.2" viewBox="0 0 1321.5 613.2" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="1311.6" height="613.2" viewBox="0 0 1311.6 613.2" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
 <style>
   :root{
     --bg:#0d1117; --border:#30363d;
@@ -21,7 +21,7 @@
   .add{fill:var(--add);}
   .del{fill:var(--del);}
 </style>
-<rect class="panel" x="0.5" y="0.5" width="1320.5" height="612.2" rx="10"/>
+<rect class="panel" x="0.5" y="0.5" width="1310.6" height="612.2" rx="10"/>
 <g font-size="14.79" class="art">
 <text x="36.0" y="50.8" xml:space="preserve">                           *##**######%###</text>
 <text x="36.0" y="68.3" xml:space="preserve">                        #####%%%%@%@@@@@%##*#</text>
@@ -71,8 +71,8 @@
 <text class="row" x="701.4" y="422.10"><tspan class="dim">. </tspan><tspan class="label">LinkedIn: </tspan><tspan class="dim">.......................</tspan> /in/lucas-schneider-c/</text>
 <text class="head" x="701.4" y="461.70">- GitHub Stats <tspan class="dim">-------------------------------------------</tspan></text>
 <text class="row" x="701.4" y="488.10"><tspan class="dim">. </tspan><tspan class="label">Repos: </tspan><tspan class="dim">...........</tspan> 14  |  <tspan class="label">PRs: </tspan><tspan class="dim">...........</tspan> 10 (8 merged)</text>
-<text class="row" x="701.4" y="514.50"><tspan class="dim">. </tspan><tspan class="label">Commits: </tspan><tspan class="dim">........</tspan> 257  |  <tspan class="label">Active days (1y): </tspan><tspan class="dim">.........</tspan> 94</text>
-<text class="row" x="701.4" y="540.90"><tspan class="dim">. </tspan><tspan class="label">Contributions (1y): </tspan><tspan class="dim">................................</tspan> 311</text>
-<text class="row" x="701.4" y="567.30"><tspan class="dim">. </tspan><tspan class="label">Lines of Code on GitHub: </tspan>  55,422 ( <tspan class="add">107,440++</tspan>, <tspan class="del">52,018--</tspan> )</text>
+<text class="row" x="701.4" y="514.50"><tspan class="dim">. </tspan><tspan class="label">Commits: </tspan><tspan class="dim">........</tspan> 258  |  <tspan class="label">Active days (1y): </tspan><tspan class="dim">.........</tspan> 95</text>
+<text class="row" x="701.4" y="540.90"><tspan class="dim">. </tspan><tspan class="label">Contributions (1y): </tspan><tspan class="dim">................................</tspan> 312</text>
+<text class="row" x="701.4" y="567.30"><tspan class="dim">. </tspan><tspan class="label">Lines of Code on GitHub: </tspan>. 48,570 ( <tspan class="add">99,548++</tspan>, <tspan class="del">50,978--</tspan> )</text>
 </g>
 </svg>
