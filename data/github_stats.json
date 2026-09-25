@@ -1,19 +1,19 @@
 {
   "username": "lucasschn1",
-  "generated_at": "2026-09-24T14:14:24.106962+00:00",
-  "public_repos": 15,
+  "generated_at": "2026-09-25T14:37:45.816455+00:00",
+  "public_repos": 10,
   "followers": 4,
   "following": 2,
   "created_at": "2025-04-15T13:35:35Z",
   "total_stars": 0,
-  "total_commits": 291,
+  "total_commits": 203,
   "pull_requests": {
-    "opened": 10,
-    "merged": 8
+    "opened": 4,
+    "merged": 3
   },
   "lines_of_code": {
-    "added": 112208,
-    "removed": 52139,
-    "net": 60069
+    "added": 95841,
+    "removed": 49148,
+    "net": 46693
   }
 }
