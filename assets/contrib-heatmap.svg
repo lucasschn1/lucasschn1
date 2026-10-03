@@ -73,14 +73,14 @@
 <rect class="cell l0" x="70" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.589s"><title>2025-10-25: 0 contributions</title></rect>
 <rect class="cell l0" x="84" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.649s"><title>2025-10-26: 0 contributions</title></rect>
 <rect class="cell l0" x="84" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.809s"><title>2025-10-27: 0 contributions</title></rect>
-<rect class="cell l2" x="84" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.969s"><title>2025-10-28: 3 contributions</title></rect>
+<rect class="cell l1" x="84" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.969s"><title>2025-10-28: 3 contributions</title></rect>
 <rect class="cell l1" x="84" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.129s"><title>2025-10-29: 2 contributions</title></rect>
 <rect class="cell l1" x="84" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.289s"><title>2025-10-30: 1 contributions</title></rect>
 <rect class="cell l0" x="84" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.449s"><title>2025-10-31: 0 contributions</title></rect>
-<rect class="cell l2" x="84" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.609s"><title>2025-11-01: 5 contributions</title></rect>
+<rect class="cell l1" x="84" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.609s"><title>2025-11-01: 5 contributions</title></rect>
 <rect class="cell l0" x="98" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.903s"><title>2025-11-02: 0 contributions</title></rect>
 <rect class="cell l0" x="98" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.063s"><title>2025-11-03: 0 contributions</title></rect>
-<rect class="cell l3" x="98" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.223s"><title>2025-11-04: 6 contributions</title></rect>
+<rect class="cell l2" x="98" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.223s"><title>2025-11-04: 6 contributions</title></rect>
 <rect class="cell l0" x="98" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.383s"><title>2025-11-05: 0 contributions</title></rect>
 <rect class="cell l0" x="98" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.543s"><title>2025-11-06: 0 contributions</title></rect>
 <rect class="cell l0" x="98" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.703s"><title>2025-11-07: 0 contributions</title></rect>
@@ -93,10 +93,10 @@
 <rect class="cell l0" x="112" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.418s"><title>2025-11-14: 0 contributions</title></rect>
 <rect class="cell l0" x="112" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.578s"><title>2025-11-15: 0 contributions</title></rect>
 <rect class="cell l0" x="126" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.014s"><title>2025-11-16: 0 contributions</title></rect>
-<rect class="cell l3" x="126" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.174s"><title>2025-11-17: 7 contributions</title></rect>
-<rect class="cell l2" x="126" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.334s"><title>2025-11-18: 5 contributions</title></rect>
+<rect class="cell l2" x="126" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.174s"><title>2025-11-17: 7 contributions</title></rect>
+<rect class="cell l1" x="126" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.334s"><title>2025-11-18: 5 contributions</title></rect>
 <rect class="cell l0" x="126" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.494s"><title>2025-11-19: 0 contributions</title></rect>
-<rect class="cell l2" x="126" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.654s"><title>2025-11-20: 4 contributions</title></rect>
+<rect class="cell l1" x="126" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.654s"><title>2025-11-20: 4 contributions</title></rect>
 <rect class="cell l0" x="126" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:0.814s"><title>2025-11-21: 0 contributions</title></rect>
 <rect class="cell l0" x="126" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:0.974s"><title>2025-11-22: 0 contributions</title></rect>
 <rect class="cell l0" x="140" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.043s"><title>2025-11-23: 0 contributions</title></rect>
@@ -104,7 +104,7 @@
 <rect class="cell l0" x="140" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.363s"><title>2025-11-25: 0 contributions</title></rect>
 <rect class="cell l1" x="140" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.523s"><title>2025-11-26: 2 contributions</title></rect>
 <rect class="cell l1" x="140" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.683s"><title>2025-11-27: 2 contributions</title></rect>
-<rect class="cell l3" x="140" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:0.843s"><title>2025-11-28: 6 contributions</title></rect>
+<rect class="cell l2" x="140" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:0.843s"><title>2025-11-28: 6 contributions</title></rect>
 <rect class="cell l0" x="140" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.003s"><title>2025-11-29: 0 contributions</title></rect>
 <rect class="cell l0" x="154" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.131s"><title>2025-11-30: 0 contributions</title></rect>
 <rect class="cell l0" x="154" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.291s"><title>2025-12-01: 0 contributions</title></rect>
@@ -205,15 +205,15 @@
 <rect class="cell l0" x="336" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.106s"><title>2026-03-06: 0 contributions</title></rect>
 <rect class="cell l0" x="336" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.266s"><title>2026-03-07: 0 contributions</title></rect>
 <rect class="cell l0" x="350" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.899s"><title>2026-03-08: 0 contributions</title></rect>
-<rect class="cell l2" x="350" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.059s"><title>2026-03-09: 4 contributions</title></rect>
+<rect class="cell l1" x="350" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.059s"><title>2026-03-09: 4 contributions</title></rect>
 <rect class="cell l1" x="350" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.219s"><title>2026-03-10: 2 contributions</title></rect>
 <rect class="cell l1" x="350" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.379s"><title>2026-03-11: 2 contributions</title></rect>
-<rect class="cell l2" x="350" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.539s"><title>2026-03-12: 4 contributions</title></rect>
+<rect class="cell l1" x="350" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.539s"><title>2026-03-12: 4 contributions</title></rect>
 <rect class="cell l0" x="350" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.699s"><title>2026-03-13: 0 contributions</title></rect>
 <rect class="cell l0" x="350" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.859s"><title>2026-03-14: 0 contributions</title></rect>
 <rect class="cell l0" x="364" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.532s"><title>2026-03-15: 0 contributions</title></rect>
 <rect class="cell l0" x="364" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.692s"><title>2026-03-16: 0 contributions</title></rect>
-<rect class="cell l2" x="364" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.852s"><title>2026-03-17: 4 contributions</title></rect>
+<rect class="cell l1" x="364" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.852s"><title>2026-03-17: 4 contributions</title></rect>
 <rect class="cell l0" x="364" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.012s"><title>2026-03-18: 0 contributions</title></rect>
 <rect class="cell l0" x="364" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.172s"><title>2026-03-19: 0 contributions</title></rect>
 <rect class="cell l0" x="364" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.332s"><title>2026-03-20: 0 contributions</title></rect>
@@ -221,7 +221,7 @@
 <rect class="cell l0" x="378" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.715s"><title>2026-03-22: 0 contributions</title></rect>
 <rect class="cell l0" x="378" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.875s"><title>2026-03-23: 0 contributions</title></rect>
 <rect class="cell l0" x="378" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.035s"><title>2026-03-24: 0 contributions</title></rect>
-<rect class="cell l2" x="378" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.195s"><title>2026-03-25: 3 contributions</title></rect>
+<rect class="cell l1" x="378" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.195s"><title>2026-03-25: 3 contributions</title></rect>
 <rect class="cell l0" x="378" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.355s"><title>2026-03-26: 0 contributions</title></rect>
 <rect class="cell l0" x="378" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.515s"><title>2026-03-27: 0 contributions</title></rect>
 <rect class="cell l1" x="378" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.675s"><title>2026-03-28: 1 contributions</title></rect>
@@ -230,7 +230,7 @@
 <rect class="cell l1" x="392" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.859s"><title>2026-03-31: 1 contributions</title></rect>
 <rect class="cell l0" x="392" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:2.019s"><title>2026-04-01: 0 contributions</title></rect>
 <rect class="cell l0" x="392" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:2.179s"><title>2026-04-02: 0 contributions</title></rect>
-<rect class="cell l4" x="392" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:2.339s"><title>2026-04-03: 9 contributions</title></rect>
+<rect class="cell l2" x="392" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:2.339s"><title>2026-04-03: 9 contributions</title></rect>
 <rect class="cell l0" x="392" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.499s"><title>2026-04-04: 0 contributions</title></rect>
 <rect class="cell l0" x="406" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.453s"><title>2026-04-05: 0 contributions</title></rect>
 <rect class="cell l0" x="406" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.613s"><title>2026-04-06: 0 contributions</title></rect>
@@ -258,22 +258,22 @@
 <rect class="cell l0" x="448" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.647s"><title>2026-04-28: 0 contributions</title></rect>
 <rect class="cell l0" x="448" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.807s"><title>2026-04-29: 0 contributions</title></rect>
 <rect class="cell l0" x="448" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.967s"><title>2026-04-30: 0 contributions</title></rect>
-<rect class="cell l2" x="448" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.127s"><title>2026-05-01: 3 contributions</title></rect>
+<rect class="cell l1" x="448" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.127s"><title>2026-05-01: 3 contributions</title></rect>
 <rect class="cell l1" x="448" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.287s"><title>2026-05-02: 2 contributions</title></rect>
 <rect class="cell l0" x="462" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.650s"><title>2026-05-03: 0 contributions</title></rect>
-<rect class="cell l2" x="462" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.810s"><title>2026-05-04: 3 contributions</title></rect>
+<rect class="cell l1" x="462" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.810s"><title>2026-05-04: 3 contributions</title></rect>
 <rect class="cell l0" x="462" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.970s"><title>2026-05-05: 0 contributions</title></rect>
 <rect class="cell l1" x="462" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.130s"><title>2026-05-06: 1 contributions</title></rect>
 <rect class="cell l1" x="462" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.290s"><title>2026-05-07: 2 contributions</title></rect>
 <rect class="cell l0" x="462" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.450s"><title>2026-05-08: 0 contributions</title></rect>
-<rect class="cell l2" x="462" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.610s"><title>2026-05-09: 4 contributions</title></rect>
+<rect class="cell l1" x="462" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.610s"><title>2026-05-09: 4 contributions</title></rect>
 <rect class="cell l0" x="476" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.498s"><title>2026-05-10: 0 contributions</title></rect>
-<rect class="cell l2" x="476" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.658s"><title>2026-05-11: 4 contributions</title></rect>
+<rect class="cell l1" x="476" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.658s"><title>2026-05-11: 4 contributions</title></rect>
 <rect class="cell l1" x="476" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.818s"><title>2026-05-12: 2 contributions</title></rect>
 <rect class="cell l0" x="476" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.978s"><title>2026-05-13: 0 contributions</title></rect>
 <rect class="cell l1" x="476" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:2.138s"><title>2026-05-14: 2 contributions</title></rect>
 <rect class="cell l1" x="476" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:2.298s"><title>2026-05-15: 1 contributions</title></rect>
-<rect class="cell l2" x="476" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.458s"><title>2026-05-16: 3 contributions</title></rect>
+<rect class="cell l1" x="476" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.458s"><title>2026-05-16: 3 contributions</title></rect>
 <rect class="cell l0" x="490" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.410s"><title>2026-05-17: 0 contributions</title></rect>
 <rect class="cell l1" x="490" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.570s"><title>2026-05-18: 1 contributions</title></rect>
 <rect class="cell l0" x="490" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.730s"><title>2026-05-19: 0 contributions</title></rect>
@@ -311,8 +311,8 @@
 <rect class="cell l0" x="546" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.276s"><title>2026-06-20: 0 contributions</title></rect>
 <rect class="cell l0" x="560" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.337s"><title>2026-06-21: 0 contributions</title></rect>
 <rect class="cell l1" x="560" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.497s"><title>2026-06-22: 1 contributions</title></rect>
-<rect class="cell l2" x="560" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.657s"><title>2026-06-23: 5 contributions</title></rect>
-<rect class="cell l3" x="560" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.817s"><title>2026-06-24: 8 contributions</title></rect>
+<rect class="cell l1" x="560" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.657s"><title>2026-06-23: 5 contributions</title></rect>
+<rect class="cell l2" x="560" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.817s"><title>2026-06-24: 8 contributions</title></rect>
 <rect class="cell l1" x="560" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.977s"><title>2026-06-25: 1 contributions</title></rect>
 <rect class="cell l0" x="560" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:2.137s"><title>2026-06-26: 0 contributions</title></rect>
 <rect class="cell l0" x="560" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.297s"><title>2026-06-27: 0 contributions</title></rect>
@@ -324,15 +324,15 @@
 <rect class="cell l0" x="574" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.055s"><title>2026-07-03: 0 contributions</title></rect>
 <rect class="cell l1" x="574" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.215s"><title>2026-07-04: 1 contributions</title></rect>
 <rect class="cell l1" x="588" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.039s"><title>2026-07-05: 1 contributions</title></rect>
-<rect class="cell l2" x="588" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.199s"><title>2026-07-06: 3 contributions</title></rect>
-<rect class="cell l2" x="588" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.359s"><title>2026-07-07: 4 contributions</title></rect>
-<rect class="cell l2" x="588" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.519s"><title>2026-07-08: 4 contributions</title></rect>
+<rect class="cell l1" x="588" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.199s"><title>2026-07-06: 3 contributions</title></rect>
+<rect class="cell l1" x="588" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.359s"><title>2026-07-07: 4 contributions</title></rect>
+<rect class="cell l1" x="588" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.519s"><title>2026-07-08: 4 contributions</title></rect>
 <rect class="cell l1" x="588" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.679s"><title>2026-07-09: 2 contributions</title></rect>
 <rect class="cell l0" x="588" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.839s"><title>2026-07-10: 0 contributions</title></rect>
 <rect class="cell l0" x="588" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.999s"><title>2026-07-11: 0 contributions</title></rect>
 <rect class="cell l0" x="602" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.155s"><title>2026-07-12: 0 contributions</title></rect>
 <rect class="cell l1" x="602" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.315s"><title>2026-07-13: 2 contributions</title></rect>
-<rect class="cell l4" x="602" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.475s"><title>2026-07-14: 11 contributions</title></rect>
+<rect class="cell l3" x="602" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.475s"><title>2026-07-14: 11 contributions</title></rect>
 <rect class="cell l1" x="602" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.635s"><title>2026-07-15: 1 contributions</title></rect>
 <rect class="cell l0" x="602" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.795s"><title>2026-07-16: 0 contributions</title></rect>
 <rect class="cell l0" x="602" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:0.955s"><title>2026-07-17: 0 contributions</title></rect>
@@ -355,29 +355,29 @@
 <rect class="cell l0" x="644" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.496s"><title>2026-08-03: 0 contributions</title></rect>
 <rect class="cell l0" x="644" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.656s"><title>2026-08-04: 0 contributions</title></rect>
 <rect class="cell l0" x="644" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.816s"><title>2026-08-05: 0 contributions</title></rect>
-<rect class="cell l2" x="644" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.976s"><title>2026-08-06: 4 contributions</title></rect>
+<rect class="cell l1" x="644" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.976s"><title>2026-08-06: 4 contributions</title></rect>
 <rect class="cell l0" x="644" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:2.136s"><title>2026-08-07: 0 contributions</title></rect>
-<rect class="cell l2" x="644" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.296s"><title>2026-08-08: 3 contributions</title></rect>
+<rect class="cell l1" x="644" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.296s"><title>2026-08-08: 3 contributions</title></rect>
 <rect class="cell l0" x="658" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.319s"><title>2026-08-09: 0 contributions</title></rect>
 <rect class="cell l1" x="658" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.479s"><title>2026-08-10: 1 contributions</title></rect>
 <rect class="cell l1" x="658" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.639s"><title>2026-08-11: 2 contributions</title></rect>
-<rect class="cell l2" x="658" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.799s"><title>2026-08-12: 5 contributions</title></rect>
+<rect class="cell l1" x="658" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.799s"><title>2026-08-12: 5 contributions</title></rect>
 <rect class="cell l1" x="658" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:0.959s"><title>2026-08-13: 2 contributions</title></rect>
 <rect class="cell l0" x="658" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.119s"><title>2026-08-14: 0 contributions</title></rect>
 <rect class="cell l1" x="658" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.279s"><title>2026-08-15: 2 contributions</title></rect>
 <rect class="cell l0" x="672" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.628s"><title>2026-08-16: 0 contributions</title></rect>
-<rect class="cell l2" x="672" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.788s"><title>2026-08-17: 3 contributions</title></rect>
+<rect class="cell l1" x="672" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.788s"><title>2026-08-17: 3 contributions</title></rect>
 <rect class="cell l1" x="672" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.948s"><title>2026-08-18: 1 contributions</title></rect>
 <rect class="cell l1" x="672" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.108s"><title>2026-08-19: 2 contributions</title></rect>
-<rect class="cell l3" x="672" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.268s"><title>2026-08-20: 6 contributions</title></rect>
-<rect class="cell rec" x="672" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.428s"><title>2026-08-21: 24 contributions</title></rect>
+<rect class="cell l2" x="672" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.268s"><title>2026-08-20: 6 contributions</title></rect>
+<rect class="cell l4" x="672" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.428s"><title>2026-08-21: 24 contributions</title></rect>
 <rect class="cell l0" x="672" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.588s"><title>2026-08-22: 0 contributions</title></rect>
 <rect class="cell l1" x="686" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:0.460s"><title>2026-08-23: 1 contributions</title></rect>
 <rect class="cell l0" x="686" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:0.620s"><title>2026-08-24: 0 contributions</title></rect>
 <rect class="cell l1" x="686" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:0.780s"><title>2026-08-25: 2 contributions</title></rect>
 <rect class="cell l1" x="686" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:0.940s"><title>2026-08-26: 1 contributions</title></rect>
 <rect class="cell l4" x="686" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.100s"><title>2026-08-27: 24 contributions</title></rect>
-<rect class="cell l2" x="686" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.260s"><title>2026-08-28: 3 contributions</title></rect>
+<rect class="cell l1" x="686" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.260s"><title>2026-08-28: 3 contributions</title></rect>
 <rect class="cell l1" x="686" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.420s"><title>2026-08-29: 1 contributions</title></rect>
 <rect class="cell l1" x="700" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.407s"><title>2026-08-30: 1 contributions</title></rect>
 <rect class="cell l1" x="700" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.567s"><title>2026-08-31: 1 contributions</title></rect>
@@ -395,8 +395,8 @@
 <rect class="cell l1" x="714" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:1.572s"><title>2026-09-12: 1 contributions</title></rect>
 <rect class="cell l1" x="728" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.169s"><title>2026-09-13: 1 contributions</title></rect>
 <rect class="cell l1" x="728" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.329s"><title>2026-09-14: 2 contributions</title></rect>
-<rect class="cell l4" x="728" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.489s"><title>2026-09-15: 9 contributions</title></rect>
-<rect class="cell l2" x="728" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.649s"><title>2026-09-16: 5 contributions</title></rect>
+<rect class="cell l2" x="728" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.489s"><title>2026-09-15: 9 contributions</title></rect>
+<rect class="cell l1" x="728" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.649s"><title>2026-09-16: 5 contributions</title></rect>
 <rect class="cell l1" x="728" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.809s"><title>2026-09-17: 1 contributions</title></rect>
 <rect class="cell l1" x="728" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.969s"><title>2026-09-18: 1 contributions</title></rect>
 <rect class="cell l1" x="728" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.129s"><title>2026-09-19: 1 contributions</title></rect>
@@ -406,14 +406,14 @@
 <rect class="cell l1" x="742" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.941s"><title>2026-09-23: 1 contributions</title></rect>
 <rect class="cell l4" x="742" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:2.101s"><title>2026-09-24: 21 contributions</title></rect>
 <rect class="cell l4" x="742" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:2.261s"><title>2026-09-25: 24 contributions</title></rect>
-<rect class="cell l3" x="742" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.421s"><title>2026-09-26: 6 contributions</title></rect>
+<rect class="cell l2" x="742" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.421s"><title>2026-09-26: 6 contributions</title></rect>
 <rect class="cell l1" x="756" y="20" width="11" height="11" rx="2" ry="2" style="animation-delay:1.111s"><title>2026-09-27: 1 contributions</title></rect>
-<rect class="cell l4" x="756" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.271s"><title>2026-09-28: 10 contributions</title></rect>
-<rect class="cell l4" x="756" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.431s"><title>2026-09-29: 11 contributions</title></rect>
-<rect class="cell l4" x="756" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.591s"><title>2026-09-30: 9 contributions</title></rect>
-<rect class="cell l4" x="756" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.751s"><title>2026-10-01: 15 contributions</title></rect>
-<rect class="cell l4" x="756" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.911s"><title>2026-10-02: 15 contributions</title></rect>
-<rect class="cell l0" x="756" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.071s"><title>2026-10-03: 0 contributions</title></rect>
+<rect class="cell l2" x="756" y="34" width="11" height="11" rx="2" ry="2" style="animation-delay:1.271s"><title>2026-09-28: 10 contributions</title></rect>
+<rect class="cell l3" x="756" y="48" width="11" height="11" rx="2" ry="2" style="animation-delay:1.431s"><title>2026-09-29: 11 contributions</title></rect>
+<rect class="cell l2" x="756" y="62" width="11" height="11" rx="2" ry="2" style="animation-delay:1.591s"><title>2026-09-30: 9 contributions</title></rect>
+<rect class="cell l3" x="756" y="76" width="11" height="11" rx="2" ry="2" style="animation-delay:1.751s"><title>2026-10-01: 15 contributions</title></rect>
+<rect class="cell rec" x="756" y="90" width="11" height="11" rx="2" ry="2" style="animation-delay:1.911s"><title>2026-10-02: 97 contributions</title></rect>
+<rect class="cell l3" x="756" y="104" width="11" height="11" rx="2" ry="2" style="animation-delay:2.071s"><title>2026-10-03: 12 contributions</title></rect>
 <text x="28" y="142">Less</text>
 <rect class="l0" x="62" y="133" width="11" height="11" rx="2" ry="2"/>
 <rect class="l1" x="76" y="133" width="11" height="11" rx="2" ry="2"/>
@@ -421,5 +421,5 @@
 <rect class="l3" x="104" y="133" width="11" height="11" rx="2" ry="2"/>
 <rect class="l4" x="118" y="133" width="11" height="11" rx="2" ry="2"/>
 <text x="138" y="142">More</text>
-<text class="footer" x="28" y="157">403 contributions in the last year | current streak: 39 days</text>
+<text class="footer" x="28" y="157">497 contributions in the last year | current streak: 40 days</text>
 </svg>
