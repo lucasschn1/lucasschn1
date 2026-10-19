@@ -1,19 +1,15 @@
 {
   "username": "lucasschn1",
-  "generated_at": "2026-10-18T13:20:50.413376+00:00",
+  "generated_at": "2026-10-19T16:30:30.870864+00:00",
   "public_repos": 10,
   "followers": 7,
   "following": 2,
   "created_at": "2025-04-15T13:35:35Z",
   "total_stars": 0,
-  "total_commits": 231,
+  "total_commits": 232,
   "pull_requests": {
     "opened": 4,
     "merged": 3
   },
-  "lines_of_code": {
-    "added": 98837,
-    "removed": 49769,
-    "net": 49068
-  }
+  "lines_of_code": null
 }
