@@ -2,13 +2,14 @@ name: Update profile art
 
 "on":
   schedule:
-    - cron: "17 9 * * *"   # 09:17 UTC daily (well clear of the metrics job)
+    - cron: "17 9 * * *"   # 09:17 UTC daily
   workflow_dispatch: {}
   push:
     branches: [main]
     paths:
       - "data/profile_config.yaml"
       - "data/ascii_source.txt"
+      - "data/tech_icons.json"
       - "scripts/**"
 
 permissions:
@@ -40,6 +41,9 @@ jobs:
       - name: Render whoami card SVG (portrait + info)
         run: python scripts/make_whoami_card.py
 
+      - name: Render tech stack card SVG
+        run: python scripts/make_tech_card.py
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh profile art [skip ci]"
@@ -48,3 +52,5 @@ jobs:
             data/github_stats.json
             assets/contrib-heatmap.svg
             assets/whoami-card.svg
+            assets/tech-card-dark.svg
+            assets/tech-card-light.svg

@@ -31,7 +31,11 @@ CELL_CLASS = ["l0", "l1", "l2", "l3", "l4", "rec"]
 
 # "matrix rain" reveal: every column falls top -> bottom at the same time, but
 # each starts on its own random beat so the grid fills like digital rain rather
-# than a sweep. Each cell lands with a bright flash that settles to its color.
+# than a sweep. Each non-empty cell lands with a bright flash that settles to
+# its color. The flash animates `fill`, never `filter`: a CSS filter on ~370
+# SVG shapes forces an offscreen pass per shape per frame, which stutters on
+# slower machines and phones (the SVG is shown through <img>, so every frame
+# repaints the whole image).
 ROW_STEP = 0.16     # seconds between rows within a column (the downward fall)
 COL_SPREAD = 1.7    # window (s) the columns' random start times are spread over
 CELL_ANIM_DUR = 0.55
@@ -54,10 +58,23 @@ THEME_CSS = """
   .l0{fill:var(--l0);} .l1{fill:var(--l1);} .l2{fill:var(--l2);}
   .l3{fill:var(--l3);} .l4{fill:var(--l4);} .rec{fill:var(--rec);}
   .cell{opacity:0;animation:rain __DUR__s ease-out forwards;}
+  .cell:not(.l0){animation-name:rain-flash;}
   @keyframes rain{
-    0%   {opacity:0;transform:translateY(-7px);filter:brightness(2.6) saturate(1.6);}
-    30%  {opacity:1;transform:translateY(0);   filter:brightness(2.6) saturate(1.6);}
-    100% {opacity:1;transform:translateY(0);   filter:none;}
+    0%   {opacity:0;transform:translateY(-7px);}
+    30%  {opacity:1;transform:translateY(0);}
+    100% {opacity:1;transform:translateY(0);}
+  }
+  @keyframes rain-flash{
+    0%   {opacity:0;transform:translateY(-7px);fill:#b4f7c4;}
+    30%  {opacity:1;transform:translateY(0);   fill:#b4f7c4;}
+    100% {opacity:1;transform:translateY(0);}
+  }
+  @media (prefers-color-scheme: light){
+    @keyframes rain-flash{
+      0%   {opacity:0;transform:translateY(-7px);fill:#4ac26b;}
+      30%  {opacity:1;transform:translateY(0);   fill:#4ac26b;}
+      100% {opacity:1;transform:translateY(0);}
+    }
   }
   @media (prefers-reduced-motion: reduce){
     .cell{animation:none;opacity:1;}
@@ -75,6 +92,10 @@ RIGHT_PAD = 12
 BOTTOM_PAD = 46  # room for legend + footer stats
 
 FONT_FAMILY = "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+
+# a month label needs this many columns before the next one; otherwise it is
+# dropped (like GitHub does for the partial month at the start of the grid)
+MIN_LABEL_WEEKS = 3
 
 MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -145,6 +166,11 @@ def month_label_positions(grid):
         if key not in seen_months:
             seen_months.add(key)
             labels[cell["week"]] = MONTH_ABBR[d.month - 1]
+
+    weeks = sorted(labels)
+    for week, next_week in zip(weeks, weeks[1:]):
+        if next_week - week < MIN_LABEL_WEEKS:
+            del labels[week]
     return labels
 
 

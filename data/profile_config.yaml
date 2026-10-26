@@ -5,8 +5,8 @@
 username: lucasschn1
 
 os: "Windows, Linux"
-host: "S Nautica"                    # employer / where you work
-title: "Full Stack Developer (Jr.)"  # job title -> shown as "Kernel"
+host: ""                             # employer / where you work (blank = line omitted)
+title: "Full Stack Developer"       # job title -> shown as "Kernel"
 ide: "IntelliJ IDEA, VS Code"
 
 languages_programming:
@@ -35,6 +35,34 @@ hobbies_tech:
 hobbies_life:
   - Music
   - Gaming
+
+# tech stack card (assets/tech-card.svg) -> `python scripts/make_tech_card.py`
+# `icon` is a key in data/tech_icons.json, or "check" for the built-in glyph
+tech:
+  - group: "Backend & data"
+    items:
+      - {icon: php, name: "PHP 8.2"}
+      - {icon: openjdk, name: "Java"}
+      - {icon: check, name: "PHPUnit"}
+      - {icon: mysql, name: "MySQL"}
+      - {icon: postgresql, name: "PostgreSQL"}
+      - {icon: firebase, name: "Firebase"}
+  - group: "Data science"
+    items:
+      - {icon: python, name: "Python"}
+      - {icon: scikitlearn, name: "scikit-learn"}
+      - {icon: pandas, name: "pandas"}
+  - group: "Frontend"
+    items:
+      - {icon: react, name: "React"}
+      - {icon: typescript, name: "TypeScript"}
+      - {icon: javascript, name: "JavaScript"}
+      - {icon: tailwindcss, name: "Tailwind CSS"}
+  - group: "Tooling"
+    items:
+      - {icon: docker, name: "Docker"}
+      - {icon: git, name: "Git"}
+      - {icon: githubactions, name: "GitHub Actions"}
 
 contact:
   email: lcordeiro183@gmail.com
